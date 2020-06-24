@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet"  href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="high-scores"><a href="#" id="view-scores">View Highscores</a></div>
+            <div class="time-clock"><span id="time-desc">Time:</span><span id="time">0</span></div>
+        </div>
+        <div id="inner-container">
+            <div class="home-modal">
+                <h3>Javascript Quiz Challenge</h3>
+                <p>Test your JavaScript knowledge by taking this 5 question quiz. You get 20 points for every question answered correctly and get penalized 10 points for every question answered incorrectly. You you will have 60 seconds per question to answer. Press 'Start Quiz' to be begin. </p>
+                <button class="btn start-quiz">Start Quiz</button>
+            </div>
+            <div class="quiz-modal-1">               
+                <div id="question-container">
+                    <div id="question">
+                        <h4>How do you call a function named "myFunction"?</h4>
+                        <button id="A">a.<span>call function myFunction()</span></button>
+                        <button id="2">b.<span>call myFunction()</span></button>
+                        <button id="C">c.<span>myFunction()</span></button>
+                        <button id="4">d.<span>function myFunction()</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal all-done-modal">
+                <h4>All done!</h4>
+                <p>Your final score is<span id="student-score">20</span> points.</p>
+                <form action="">
+                    <label for="initials">Enter your initials:</label>
+                    <input type="text" id="student" placeholder="Enter your initials">
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+            <div class="modal high-scores-modal">
+                <h4>High Scores</h4>
+                <div class="high-score-list">                    </div>
+                <div id="high-score-button-footer">
+                    <button id="go-back"><span>Go Back</span></button>
+                    <button id="clear-high-scores"><span>Clear High Scores</span></button>
+                </div>
+            </div>
+            <div id="result-message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
